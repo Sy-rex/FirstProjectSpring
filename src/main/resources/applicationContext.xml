@@ -5,6 +5,13 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="musicBean" class="com.sobolev.spring.RapMusic">
+
+    <bean id="musicBean"
+          class="com.sobolev.spring.RockMusic">
+    </bean>
+
+    <bean id="musicPlayer"
+          class="com.sobolev.spring.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
     </bean>
 </beans>
