@@ -13,7 +13,10 @@
     </bean>
 
     <bean id="rapBean"
-          class="com.sobolev.spring.RapMusic">
+          class="com.sobolev.spring.RapMusic"
+          init-method="myInitMethod"
+          destroy-method="myDestroyMethod"
+          factory-method="getRapMusic">
     </bean>
 
     <bean id="classicalBean"
@@ -21,7 +24,9 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="com.sobolev.spring.MusicPlayer" scope="prototype">
+          class="com.sobolev.spring.MusicPlayer" scope="prototype"
+    init-method="myInitMethod"
+    destroy-method="myDestroyMethod">
         <property name="music">
             <list>
                 <ref bean="musicBean"/>
