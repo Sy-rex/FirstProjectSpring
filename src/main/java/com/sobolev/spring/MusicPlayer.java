@@ -1,18 +1,23 @@
 package com.sobolev.spring;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
+    private List<Music> music;
     private String name;
     private int volume;
 
 
-    public MusicPlayer(Music music) {
+    public MusicPlayer(List<Music> music) {
         this.music = music;
     }
 
-    public MusicPlayer() {};
+    public MusicPlayer() {
+        this.music = new ArrayList<Music>();
+    };
 
-    public void setMusic(Music music) {
+    public void setMusic(List<Music> music) {
         this.music = music;
     }
 
@@ -33,6 +38,9 @@ public class MusicPlayer {
     }
 
     public void playMusic() {
-        System.out.println("Playing music " + music.getSong());
+        System.out.println("Playing music:");
+        for (Music music : music) {
+            System.out.println(music.getSong());
+        }
     }
 }
