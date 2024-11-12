@@ -10,4 +10,5 @@ Commit №4 Training to use Dependency Injection with tag property
 
 Commit №5 Training to use Dependency Injection from properties file and use list with beans in property
 
+Commit №6 Training to use different scope like singleton and prototype
 

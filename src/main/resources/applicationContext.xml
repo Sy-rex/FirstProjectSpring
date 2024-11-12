@@ -21,7 +21,7 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="com.sobolev.spring.MusicPlayer">
+          class="com.sobolev.spring.MusicPlayer" scope="prototype">
         <property name="music">
             <list>
                 <ref bean="musicBean"/>
