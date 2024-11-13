@@ -21,3 +21,5 @@ Commit №9 Training to use Annotation @Autowired without ambiguities
 Commit №10 Training to use Annotation @Qualifier
 
 Commit №11 Training to use Annotations @Value,@Scope,@PostConstruct and @PreDestroy
+
+Commit №12 Training to use full Java-based configuration and Dependency Injection with Annotation @Bean

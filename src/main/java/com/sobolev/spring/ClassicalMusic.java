@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Component
+
 public class ClassicalMusic implements Music {
     private List<String> listSong;
 

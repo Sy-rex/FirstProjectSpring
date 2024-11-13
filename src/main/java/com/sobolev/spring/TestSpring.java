@@ -1,12 +1,11 @@
 package com.sobolev.spring;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
 //        MusicPlayer player = (MusicPlayer) context.getBean("musicPlayer", MusicPlayer.class);
 //        RapMusic music = (RapMusic) context.getBean("rapMusic",RapMusic.class);
@@ -27,14 +26,14 @@ public class TestSpring {
 //        System.out.println("Name musicPlayer: " + secondmusicPlayer.getName());
 //        System.out.println("Volume: " + secondmusicPlayer.getVolume());
 //        player.playMusic();
-//        Computer computer = (Computer) context.getBean("computer", Computer.class);
-//        System.out.println(computer);
-        MusicPlayer musicPlayer = (MusicPlayer) context.getBean("musicPlayer", MusicPlayer.class);
-
-        System.out.println(musicPlayer.getName());
-        System.out.println(musicPlayer.getVolume());
-
-        ClassicalMusic classicalMusic1 = (ClassicalMusic) context.getBean("classicalMusic", ClassicalMusic.class);
+        Computer computer = (Computer) context.getBean("computer", Computer.class);
+        System.out.println(computer);
+//        MusicPlayer musicPlayer = (MusicPlayer) context.getBean("musicPlayer", MusicPlayer.class);
+//
+//        System.out.println(musicPlayer.getName());
+//        System.out.println(musicPlayer.getVolume());
+//
+//        ClassicalMusic classicalMusic1 = (ClassicalMusic) context.getBean("classicalMusic", ClassicalMusic.class);
 //        System.out.println(classicalMusic1 == classicalMusic2);
         context.close();
     }
