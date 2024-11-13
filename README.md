@@ -19,3 +19,5 @@ Commit №8 Training to use Annotation @Component without Dependency Injection
 Commit №9 Training to use Annotation @Autowired without ambiguities
 
 Commit №10 Training to use Annotation @Qualifier
+
+Commit №11 Training to use Annotations @Value,@Scope,@PostConstruct and @PreDestroy
