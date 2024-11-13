@@ -7,34 +7,5 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
-
-    <bean id="musicBean"
-          class="com.sobolev.spring.RockMusic">
-    </bean>
-
-    <bean id="rapBean"
-          class="com.sobolev.spring.RapMusic"
-          init-method="myInitMethod"
-          destroy-method="myDestroyMethod"
-          factory-method="getRapMusic">
-    </bean>
-
-    <bean id="classicalBean"
-          class="com.sobolev.spring.ClassicalMusic">
-    </bean>
-
-    <bean id="musicPlayer"
-          class="com.sobolev.spring.MusicPlayer" scope="prototype"
-    init-method="myInitMethod"
-    destroy-method="myDestroyMethod">
-        <property name="music">
-            <list>
-                <ref bean="musicBean"/>
-                <ref bean="classicalBean"/>
-                <ref bean="rapBean"/>
-            </list>
-        </property>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    <context:component-scan base-package="com.sobolev.spring"/>
 </beans>

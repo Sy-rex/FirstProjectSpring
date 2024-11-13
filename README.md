@@ -13,3 +13,5 @@ Commit №5 Training to use Dependency Injection from properties file and use li
 Commit №6 Training to use different scope like singleton and prototype
 
 Commit №7 Learning lifecycle(init and destroy methods) of beans with different scope(singleton and prototype) and use tag factory-method
+
+Commit №8 Training to use Annotation @Component without Dependency Injection
