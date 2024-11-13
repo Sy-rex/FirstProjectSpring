@@ -17,3 +17,5 @@ Commit №7 Learning lifecycle(init and destroy methods) of beans with different
 Commit №8 Training to use Annotation @Component without Dependency Injection
 
 Commit №9 Training to use Annotation @Autowired without ambiguities
+
+Commit №10 Training to use Annotation @Qualifier
